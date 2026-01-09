@@ -15,14 +15,14 @@
 
 .btn {
     border: none;
-    border-radius: 5%;
+    border-radius: 3%;
     padding: 12px 16px;
     font-weight: bold;
     cursor: pointer;
     margin: 0 8px;
 }
 
-/* Solid green button */
+
 .btn {
     background-color: #469165;
     color: white;
@@ -55,86 +55,127 @@ nav .menu a {
 }
 
 #banner {
-    background: url("./assets/hero-bg.png") center/cover no-repeat;
+  background: url("./assets/hero-bg.png") center/cover no-repeat;
+  padding: 120px 0 180px;
 }
+
 
 .banner-container {
-    width: 85%;
-    max-width: 1360px;
-    margin: 0 auto;
-    padding: 120px 0 180px;
-    text-align: center;
+  width: 85%;
+  max-width: 1360px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 
-.banner-head {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
+
 
 .banner-head ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .banner-head li {
-    display: inline-block;
-    padding: 6px 14px;
-    background: #ffffff;        
-    color: #4CAF7A;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.655);
+  display: inline-block;
+  padding: 6px 14px;
+  background: #ffffff;
+  color: #4CAF7A;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
 }
 
 .frame h1 {
-    font-size: 72px;
-    font-weight: 700;
-    text-align: center;
-    line-height: 1.2;
-    padding-bottom: 16px;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
 }
 
 .frame .line1 {
-    color: white;
-    display: block;
+  color: #ffffff;
+  display: block;
 }
 
 .frame .line2 {
-    color: #4CAF7A;
-    display: block;
+  color: #4CAF7A;
+  display: block;
 }
 
 
 .banner-container p {
-    max-width: 720px;
-    margin: 0 auto 40px;
-    color: #d1d5db;
-    font-size: 18px;
-    line-height: 1.6;
+  max-width: 720px;
+  margin: 0 auto 40px;
+  color: #d1d5db;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-.frame button{
-    display: flex;
+
+.banner-container > div:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
-.btn-secondary{
-    padding: 12px 16px 12px 16px;
-    background: transparent;
-    color: white;
-    cursor: pointer;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  background-color: #469165;
+  color: #fff;
+  border: none;
+  border-radius: 9999px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-#apps {
+.btn img {
+  width: 18px;
+  height: auto;
+  display: block;
+}
+
+.btn:hover {
+  background-color: #3a8b65;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 9999px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  color: #001931;
+}
+
+#notes {
   padding: 80px 20px;
   background-color: #f9f9f9;
   color: #ffffff;
 }
 
-.apps-container {
+.notes-container {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -148,38 +189,43 @@ nav .menu a {
 }
 
 .section-heading p {
-  font-size: 18px;
-  color: #d1d5db;
+  font-size: 16px;
+  color:#627382;
   max-width: 700px;
   margin: 0 auto 50px;
+  margin-bottom: 44px;
   line-height: 1.6;
 }
 
-.apps-box {
+.notes-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
 }
 
-.apps-card {
+.notes-card {
+  width: 322px;
+  height: 300px;
   background-color: #FFFFFF;
   padding: 30px 20px;
   border-radius: 12px;
   text-align: center;
-  /* transition: transform 0.2s ease; */
   display: flex;               
   flex-direction: column;      
   align-items: center;         
-  justify-content: center;    
+  justify-content: center; 
+  cursor: pointer;
+  box-shadow: 0 6px 50px 0px #00000028;
 }
 
 
-.apps-card:hover {
-  /* transform: translateY(-5px); */
+.notes-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease;
 }
 
-.apps-card .logo {
+.notes-card .logo {
   width: 60px;
   height: 60px;
   margin-bottom: 20px;
@@ -190,19 +236,20 @@ nav .menu a {
   justify-content: center;
 }
 
-.apps-card .logo img {
+.notes-card .logo img {
   width: 50%;
   height: auto;
 }
 
-.apps-card h3 {
+.notes-card h3 {
+  display: flex;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 12px;
   color: #001931;
 }
 
-.apps-card p {
+.notes-card p {
   font-size: 16px;
   color: #627382;
   line-height: 1.5;
@@ -280,6 +327,95 @@ nav .menu a {
   width: 20px;     
   display: block;
 }
+
+#EarlyAccess {
+    padding: 0px 120px 120px 120px ;
+  
+}
+
+.access-container {
+  width: 85%;
+  max-width: 1360px;
+  background-color: #f9f9f9;
+  padding: 120px 120px 120px 120px;
+  text-align: center;
+  margin:0 auto;
+}
+
+.access-content-1 h2{
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 16px;
+    
+}
+.access-content-1 p{
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 24px;
+}
+
+.access-content-2 p{
+    padding-top: 16px;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+#content {
+  width: 100%;
+  max-width: 1600px;
+  background-color: #001931;
+  color: #fff;
+  padding: 120px 120px 80px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+#content .top {
+  width: 86%;
+  max-width: 1360px;
+  max-height: 348px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#content .logo img {
+  height: 40px;
+}
+
+#content .social h6 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+#content .social .image {
+  display: flex;
+  gap: 12px;
+}
+
+#content .social .image img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+#content .bottom hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 20px 0;
+}
+
+#content .bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
 
 
 
