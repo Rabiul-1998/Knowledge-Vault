@@ -1,3 +1,136 @@
-body{
-    background-color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.font-open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.color-white {
+    color: white;
+}
+
+.btn {
+    border: none;
+    border-radius: 5%;
+    padding: 12px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 8px;
+}
+
+/* Solid green button */
+.btn {
+    background-color: #469165;
+    color: white;
+}
+
+
+
+nav {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 120px;
+}
+
+nav .menu {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 32px;
+}
+
+nav .menu a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#banner {
+    /* linear-gradient(rgba(8, 24, 40, 0.85), rgba(8, 24, 40, 0.85)), */
+    background: 
+    url("./assets/hero-bg.png") center/cover no-repeat;
+}
+
+.banner-container {
+    width: 85%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 120px 0 180px;
+    text-align: center;
+}
+
+
+.banner-head {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.banner-head ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-head li {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #ffffff;        
+    color: #4CAF7A;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.frame h1 {
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+    padding-bottom: 16px;
+}
+
+.frame .line1 {
+    color: white;
+    display: block;
+}
+
+.frame .line2 {
+    color: #4CAF7A;
+    display: block;
+}
+
+
+.banner-container p {
+    max-width: 720px;
+    margin: 0 auto 40px;
+    color: #d1d5db;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.frame button{
+    display: flex;
+}
+
+.btn-secondary{
+    padding: 12px 16px 12px 16px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
