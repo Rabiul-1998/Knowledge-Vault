@@ -208,6 +208,82 @@ nav .menu a {
   line-height: 1.5;
 }
 
+#solution{
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.solution-container{
+    width: 85%;
+    max-width: 1360px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 120px 120px 120px 120px;
+}
+.solution-container img{
+    width: 600px;
+}
+.solution-content{
+    padding-top: 120px;
+    padding-bottom:  120px;
+    align-items: left;
+}
+
+.solution-content .head{
+    font-size: medium;
+    font-weight: 16px;
+    color: #469165;
+    
+}
+
+.solution-content h1{
+    font-size: 48;
+    font-weight: bold;
+    color: #001931;
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    line-height: auto;
+}
+
+.solution-content p{
+    font-weight: 16px;
+    line-height: 20px;
+    padding-bottom: 40px;
+}
+
+.solution-content .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.solution-content .list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #333333;
+}
+
+.solution-content .list li span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.solution-content .list li span img {
+  width: 20px;     
+  display: block;
+}
+
+
+
+
 
 
 
