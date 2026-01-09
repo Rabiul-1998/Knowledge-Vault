@@ -164,6 +164,13 @@ nav .menu a {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+.btn-secondary img {
+  width: 16px;
+  height: auto;
+  display: block;
+}
+
+
 .btn-secondary:hover {
   background-color: #ffffff;
   color: #001931;
@@ -347,6 +354,11 @@ nav .menu a {
     font-size: 40px;
     padding-bottom: 16px;
     
+}
+
+.access-container-2 button{
+  margin-top: 24px;
+  margin-bottom: 20px;
 }
 .access-content-1 p{
     font-size: 16px;
